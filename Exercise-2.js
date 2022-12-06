@@ -6,7 +6,7 @@ function findMax(array, index) {
     count++;
     max = max >= array[index] ? max : array[index];
     if (index < 5) {
-        fill(array, ++index)
+        findMax(array, ++index)
     }
 };
 findMax(arr, 0);
