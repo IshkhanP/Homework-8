@@ -1,7 +1,7 @@
 const arr = [];
 let max;
 let count = 0;
-function fill(array, index) {
+function findMax(array, index) {
     array[index] = Math.floor(100 * Math.random());
     count++;
     max = max >= array[index] ? max : array[index];
@@ -9,6 +9,6 @@ function fill(array, index) {
         fill(array, ++index)
     }
 };
-fill(arr, 0);
+findMax(arr, 0);
 
 console.log(`${arr} Maximum: ${max}`);
